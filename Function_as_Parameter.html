@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function as Parameter</title>
+    <script>
+        // program to pass a function as a parameter
+
+function greet() {
+    return 'Hello';
+}
+
+// passing function greet() as a parameter
+function name(user, func)
+{
+
+    // accessing passed function
+    const message = func();
+
+    console.log(`${message} ${user}`);
+}
+
+name('Vansh', greet);
+name('Tyagi', greet);
+name('Shubham', greet);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
